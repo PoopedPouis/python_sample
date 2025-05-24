@@ -51,7 +51,10 @@ def delete_student(group, name):
 
 
 def show_student(group, name):
-    print('TODO: please provide code to show the score for a student')
+    data = load_data()
+    if group in data:
+        show data[name]
+    print(f"{name} is deleted from the database.")
 
 
 def show_students_count(group):
